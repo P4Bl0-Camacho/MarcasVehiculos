@@ -23,5 +23,11 @@ namespace MarcasVehiculos.Models
         [Column(TypeName = "decimal(18,2)")]
         [Display(Name = "Precio (USD)")]
         public decimal Precio { get; set; }
+
+        [Display(Name = "Marca")]
+        public int MarcaId { get; set; }
+
+        [Display(Name = "Marca")]
+        public Marca? Marca { get; set; }
     }
 }
